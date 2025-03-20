@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Retinopathy Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">DR Detection</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#prediction">Prediction</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Welcome to Diabetic Retinopathy Detection</h1>
+            <p>
+                Detect Diabetic Retinopathy with advanced machine learning technology.
+                Upload your retina images to get accurate results.
+            </p>
+            <img src="home-image.jpg" alt="Retina Image" class="home-image">
+        </div>
+    </section>
+
+    <!-- Prediction Section -->
+    <section id="prediction" class="prediction">
+        <div class="prediction-box">
+            <h2>Upload Retina Image for Prediction</h2>
+            <form method="POST" action="/predict" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Our System</h2>
+        <p>
+            This system leverages deep learning to identify different stages of Diabetic Retinopathy.
+            Built with state-of-the-art models, it ensures reliable and efficient results.
+        </p>
+        <img src="about-image.jpg" alt="About Image" class="about-image">
+    </section>
+
+</body>
+</html>
